@@ -6,7 +6,7 @@ const async = require('async');
 var qr = require('qr-image');
 var fs = require('fs');
 const path = require('path');
-
+// var async = require('async');
 
 let _noticias;
 
@@ -21,7 +21,6 @@ const getById = (req, res) => {
 
     const {id} = req.params; //destructor
 
-   
 
     if(id.toString().length!=24){
         res.status(400);

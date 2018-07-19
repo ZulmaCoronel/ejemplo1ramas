@@ -9,7 +9,7 @@ const URL = `/naldeportivo`;
 // MODELS
 require('./models/models')(wagner);
 
-//const user = require('./router/user.router.js')(wagner);
+
 const noticias = require('./router/noticias.router.js')(wagner);
 
 let app = express();
@@ -26,10 +26,6 @@ app.use(function (req, res, next) {
 });
 
 // ROUTERS
-//const v = 'v1';
-//const uri = `/usuarios/v1/`;
-
-//app.use(uri+'usuario', user);
 
 const uri = '/noticias/v1/';
 app.use(uri+'noticia', noticias);
