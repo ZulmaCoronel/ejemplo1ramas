@@ -66,8 +66,6 @@ function guardar(){
     var activo = $('#InputEstado').val();
     var foto = $('#txtFoto').val();
 
-
-
     console.log(titulo);
     console.log(autor);
     console.log(nota);
